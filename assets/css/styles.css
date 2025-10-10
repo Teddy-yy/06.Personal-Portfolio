@@ -42,9 +42,14 @@ a {
 
 .heading {
     color: var(--heading-color);
-    font-size: 4.2rem;
+    font-size: 5.6rem;
     font-weight: 500;
     line-height: 1.2; /* 119.048% */
+}
+
+.heading.lv3 {
+    font-size: 32px;
+    line-height: 1.25; /* 125% */
 }
 
 .container {
@@ -268,7 +273,7 @@ a {
 
 .hero__deco-2 {
     bottom: 0;
-    right: -200px;
+    right: -120px;
 }
 
 /* Clients */
@@ -278,6 +283,7 @@ a {
 
 .client__heading {
     position: relative;
+    font-size: 4.2rem;
     padding-left: 99px;
     margin-top: 13px;
     max-width: 352px;
@@ -340,5 +346,45 @@ a {
 .client__brand {
     color: var(--heading-color);
 }
+
+/* Service */
+.service {
+    padding: 70px 0;
+    margin-top: 63px;
+}
+
+.service__top {
+    text-align: center;
+}
+
+.service__desc {
+    max-width: 534px;
+    margin: 20px auto 0;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67; /* 166.667% */
+}
+
+.service__list {
+    margin-top: 60px;
+}
+
+.service__item {
+    padding: 32px 42px;
+    background: #FBFAFF;
+}
+
+.service__item-title {
+    margin-top: 20px;
+}
+
+.service__item-desc {
+    margin-top: 15px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67; /* 166.667% */
+}
+
+
 
 
