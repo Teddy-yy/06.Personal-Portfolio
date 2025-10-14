@@ -701,6 +701,119 @@ a {
     bottom: 0;
 }
 
+/* FAQ */
+.faq {
+    margin-top: 25px;
+    padding: 70px 0;
+}
+
+.faq__heading {
+    max-width: 575px;
+}
+
+.faq__list {
+    margin-top: 80px;
+    padding-right: 160px;
+}
+
+.faq__item {
+    position: relative;
+    margin-top: 60px;
+}
+
+.faq__row {
+    position: relative;
+    display: flex;
+    padding-bottom: 33px;
+    padding-left: 22px;
+    justify-content: space-between;
+    column-gap: 30px;
+    border-bottom: 1px solid #08182F;
+    transition: .5s ease-in-out;
+}
+
+.faq__question {
+    transition: .5s ease-in-out;
+}
+
+.faq__answer {
+    position: absolute;
+    top: 63px;
+    max-width: 487px;
+    height: 57px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67; 
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s ease-in-out;
+}
+
+.faq__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.faq__icon {
+    position: relative;
+    top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgba(22, 26, 28, 0.2);
+    transition: .5s ease-in-out;
+}
+
+.faq__icon::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 9.959px;
+    background: #161A1C;
+    transition: .5s ease-in-out;
+}
+
+.line {
+    width: 9.959px;
+    height: 2px;
+    background: #161A1C;
+}
+
+input[type="checkbox"]:checked  ~ .faq__row {
+    border-bottom-color: var(--primary-color);
+    padding-bottom: 21px;
+}
+
+input[type="checkbox"]:checked  ~ .faq__row .faq__question{
+    padding-bottom: 80px;
+    color: var(--primary-color);
+}
+
+input[type="checkbox"]:checked  ~ .faq__row .faq__answer {
+    opacity: 1;
+    visibility: visible;
+}
+
+input[type="checkbox"]:checked  ~ .faq__row .faq__icon {
+    /* top: 35px; */
+    border-color: rgba(93, 59, 238, 0.2);
+}
+
+input[type="checkbox"]:checked  ~ .faq__row .faq__icon .line {
+    background: var(--primary-color);
+}
+
+input[type="checkbox"]:checked  ~ .faq__row .faq__icon::after {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
+
 
 
 
