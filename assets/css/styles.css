@@ -487,21 +487,19 @@ a {
 
 .project__list {
     margin-top: 55px;
-    padding: 15px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
 
-.project__inner {
-    row-gap: 10px;
-}
-
-.project__item {
+.project .project__item {
     position: relative;
     background: #FFF;
     padding: 24px 23px 23px 34px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    column-gap: 44px;
 }
 
 .project__item--info {
