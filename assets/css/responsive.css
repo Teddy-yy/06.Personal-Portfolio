@@ -28,13 +28,12 @@
     }
 
     .header {
-        padding: 0 6px;
+        padding: 0 20px;
     }
 
     .header .intro-bar {
         width: 100%;
         flex-direction: row-reverse;
-        padding: 0 20px;
         border-bottom: 1px solid #D6D3E2;
     }
 
